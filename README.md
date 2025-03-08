@@ -26,19 +26,12 @@ O **Tesouro Direto Monitor** é um script Python desenvolvido para automatizar a
    cd seu-repositorio
    ```
 
-2. Crie um ambiente virtual (opcional, mas recomendado):
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # Linux/Mac
-   venv\Scripts\activate     # Windows
-   ```
-
-3. Instale as dependências:
+2. Instale as dependências:
    ```bash
    pip install -r requirements.txt
    ```
 
-4. Configure o WebDriver do Chrome, garantindo que esteja compatível com a sua versão do navegador.
+3. Configure o WebDriver do Chrome, garantindo que esteja compatível com a sua versão do navegador.
 
 ## 🔑 Configuração
 
@@ -87,18 +80,10 @@ O script irá:
 #investimentos #rendafixa #IPCA
 ```
 
-## 🛠️ Contribuição
-
-1. Fork este repositório.
-2. Crie uma branch (`git checkout -b feature-nova`).
-3. Commit suas alterações (`git commit -m 'Nova funcionalidade'`).
-4. Push para sua branch (`git push origin feature-nova`).
-5. Abra um Pull Request.
-
 ## 📄 Licença
 
 Este projeto é privado e protegido por direitos autorais. O uso e a distribuição estão restritos.
 
 ## 🤝 Contato
 
-Desenvolvido por [Seu Nome](https://www.linkedin.com/in/fcardan/).
+Desenvolvido por [@fcardan](https://www.linkedin.com/in/fcardan/).
