@@ -1,89 +1,78 @@
 # Tesouro Direto Monitor
 
-## 📋 Descrição
+## 🔹 Description
 
-O **Tesouro Direto Monitor** é um script Python desenvolvido para automatizar a coleta de dados do Tesouro Direto, processar as informações e enviar atualizações em tempo real via Telegram. Ele utiliza Selenium para extração de dados da web e organiza os títulos de acordo com os melhores retornos.
+**Tesouro Direto Monitor** is a Python script designed to automate data collection from Tesouro Direto, process the information, and send real-time updates via Telegram. It uses Selenium for web data extraction and organizes bonds based on the best returns.
 
-## 🚀 Funcionalidades
+## 🔹 Features
 
-- Coleta automática de dados do Tesouro Direto.
-- Processamento e classificação de títulos públicos (IPCA+, Prefixado, etc.).
-- Formatação de mensagens personalizadas para Telegram.
-- Envio automático de atualizações usando um bot do Telegram.
+- Automatic data collection from Tesouro Direto.
+- Processing and classification of government bonds (IPCA+, Fixed Rate, etc.).
+- Custom message formatting for Telegram.
+- Automatic updates sent via a Telegram bot.
 
-## 🧰 Tecnologias Utilizadas
+## 🔹 Technologies Used
 
 - **Python 3.13.1**
-- **Selenium** para automação de navegador.
-- **pylegram** para integração com o Telegram.
-- **JSON** para manipulação de dados.
+- **Selenium** for browser automation.
+- **pylegram** for Telegram integration.
+- **JSON** for data handling.
 
-## ⚙️ Instalação
-
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
-   cd seu-repositorio
-   ```
-
-2. Instale as dependências:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. Configure o WebDriver do Chrome, garantindo que esteja compatível com a sua versão do navegador.
-
-## 🔑 Configuração
-
-- **Token do Telegram:** Altere o token do bot e o `chat_id` no arquivo `MessageSender` para os seus dados.
-- **WebDriver:** Ajuste as configurações do Selenium se necessário (ex: modo headless).
-
-## 🚩 Como Usar
-
-Execute o script principal:
+## 🔹 Installation
 
 ```bash
+# Clone the repository
+git clone https://github.com/your-username/your-repository.git
+cd your-repository
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Configure the Chrome WebDriver to match your browser version
+```
+
+## 🔹 Configuration
+
+- **Telegram Token:** Update the bot token and `chat_id` in the `MessageSender` file with your credentials.
+- **WebDriver:** Adjust Selenium settings if necessary (e.g., headless mode).
+
+## 🔹 How to Use
+
+```bash
+# Run the main script
 python main.py
 ```
 
-O script irá:
-- Coletar dados atualizados do Tesouro Direto.
-- Processar os títulos para exibir os melhores rendimentos.
-- Enviar uma mensagem formatada para o Telegram.
+The script will:
+- Fetch updated Tesouro Direto data.
+- Process bonds to display the best returns.
+- Send a formatted message to Telegram.
 
-## 🗂️ Estrutura do Projeto
+## 🔹 Project Structure
 
-```
+```plaintext
 .
-├── main.py              # Script principal
-├── requirements.txt     # Dependências do projeto
-├── README.md            # Documentação
+├── main.py              # Main script
+├── requirements.txt     # Project dependencies
+├── README.md            # Documentation
 └── src/
-    ├── chrome_config.py   # Configuração do WebDriver
-    ├── data_fetcher.py    # Coleta de dados do Tesouro Direto
-    ├── data_processor.py  # Processamento dos dados
-    ├── message_formatter.py  # Formatação da mensagem
-    └── message_sender.py     # Envio da mensagem via Telegram
+    ├── chrome_config.py   # WebDriver configuration
+    ├── data_fetcher.py    # Data collection from Tesouro Direto
+    ├── data_processor.py  # Data processing
+    ├── message_formatter.py  # Message formatting
+    └── message_sender.py     # Sending messages via Telegram
 ```
 
-## ✅ Exemplo de Saída
+## 🔹 Output Example
 
-```
-🤖 *Monitoramento #TesouroDireto*
+```plaintext
+🤖 *Monitoring #TesouroDireto*
 
 *IPCA+*
 • 2029  5.75%  R$1010.00
 
-*Prefixado*
+*Fixed Rate*
 • 2026  10.25%  R$950.00
 
-#investimentos #rendafixa #IPCA
+#investments #fixedincome #IPCA
 ```
-
-## 📄 Licença
-
-Este projeto é privado e protegido por direitos autorais. O uso e a distribuição estão restritos.
-
-## 🤝 Contato
-
-Desenvolvido por [@fcardan](https://www.linkedin.com/in/fcardan/).
